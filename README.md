@@ -8,7 +8,7 @@ After you've installed the necessary programs and followed the steps under Insta
 
 **... Go grab a coffee, this might take a while ...**
 
-Vagrant will download an empty box, called `debian-testing_x64` from dropbox and then mount the folder `dev-environment/` as `/vagrant/` in the guest system. Vagrant will also forward port 80 and port 2222 to your localhost (port 80 for web and port 2222 for ssh).
+Vagrant will download an empty box, called `debian-testing_x64` from dropbox and then mount the folder `dev-environment/` as `/vagrant/` in the guest system. Vagrant will also forward port 80, 3306 and port 2222 to your localhost (port 80 for web, port 3306 for mysql and port 2222 for ssh).
 
 For easier usage add this to your local `hosts` file:
 

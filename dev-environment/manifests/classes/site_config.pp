@@ -37,7 +37,7 @@ class apache_config {
             Apache::Loadmodule['vhost_alias'],
         ];
     }
-    file { "/etc/php5/apache2filter/php.ini":
+    file { "/etc/php5/apache2/php.ini":
         source => "/vagrant/configs/php/php.ini",
         require => [
             Package['apache2'],
@@ -49,7 +49,7 @@ class apache_config {
         ensure    => running,
         enable    => true,
         require   => [ Package['apache2'], ],
-        subscribe => [ File['/etc/apache2/sites-enabled/default.conf'], File['/etc/php5/apache2filter/php.ini'] ]
+        subscribe => [ File['/etc/apache2/sites-enabled/default.conf'], File['/etc/php5/apache2/php.ini'] ]
     }
 }
 

@@ -14,7 +14,6 @@ class dev {
 
     class {
         update_sources: stage => update;
-        update_hosts:   stage => update;
         update_repos:   stage => pre;
 
         apache:         stage => basics;

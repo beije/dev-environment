@@ -46,11 +46,3 @@ class php {
         ensure => latest,
     }
 }
-
-# Update hosts file
-class update_hosts {
-    file { "/etc/hosts":
-        source => "/vagrant/configs/system/hosts"
-    }
-}
-
